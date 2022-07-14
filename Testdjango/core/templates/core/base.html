@@ -21,7 +21,7 @@
 
 
     <header id="header">
-        <img class="menu" src="{% static 'core/img/menu.jpg' %}" alt="menu" id="menu">
+        <!--img class="menu" src="{% static 'core/img/menu.jpg' %}" alt="menu" id="menu"-->
         <div class="contenedor_logo">
             <img class="logo" src="{% static 'core/img/agroplantaslogo.png' %}" alt="logo">
         </div>
@@ -35,6 +35,9 @@
                     </li>
                     <li>
                         <a href="{% url 'contacto' %}">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'carrito' %}">Carrito</a>
                     </li>
                     <li><a href="{% url 'galeria' %}">Tienda</a></li>
                     {% if perms.core.add_producto %}

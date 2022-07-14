@@ -108,4 +108,8 @@ def registro(request):
         data["form"] = formulario
         
     return render(request, 'registration/registro.html', data)
+
+def carrito(request):
+      
+    return render(request, 'core/carrito.html')
   

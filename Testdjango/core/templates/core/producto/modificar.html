@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+
+{% block contenido %}
+
+<br><br>
+<h2>Editar Producto</h2>
+<hr>
+<form action="" method="post" enctype="multipart/form-data">
+
+    {% csrf_token %}
+    {{ form }}
+    <div class="d-flex justify-content-end">
+        <input type="reset" value="Cancelar" class="btn btn-secondary">
+        &nbsp;
+    <input type="submit" value="Editar" class="btn btn-primary">
+    </div>
+    
+
+
+</form>
+
+{% endblock %}
